@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-import dj_database_url
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -50,7 +50,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'svo.wsgi.application'
 
-# База данных (Postgres на Render)
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
