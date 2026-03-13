@@ -1,0 +1,25 @@
+# Python
+*.pyc
+__pycache__/
+
+# SQLite
+db.sqlite3
+
+# Django
+*.log
+*.pot
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Static files
+staticfiles/
+media/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
