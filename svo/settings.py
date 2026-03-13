@@ -1,10 +1,7 @@
 import os
 from pathlib import Path
-<<<<<<< HEAD
-
-=======
 import dj_database_url
->>>>>>> origin/main
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -54,23 +51,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'svo.wsgi.application'
 
-<<<<<<< HEAD
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-=======
-# База данных (Postgres на Render)
-DATABASES = {
-    'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL')
-    )
-}
 
->>>>>>> origin/main
-# Пароли
+#
+#  Пароли
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
     {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
@@ -87,12 +77,10 @@ USE_TZ = True
 # Статика
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-<<<<<<< HEAD
+
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 STATICFILES_DIRS = [
     BASE_DIR / "static"
 ]
-=======
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
->>>>>>> origin/main
+
